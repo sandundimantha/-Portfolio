@@ -12,7 +12,7 @@ const Hero = () => {
                     frameBorder='0'
                     width='100%'
                     height='100%'
-                    className="w-full h-full scale-100 md:scale-100 pointer-events-auto" // Ensure interaction
+                    className="w-full h-full scale-[0.6] md:scale-100 pointer-events-auto" // Mobile: 60%, Desktop: 100%
                     title="3D Spline Model"
                 ></iframe>
 
