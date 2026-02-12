@@ -10,6 +10,7 @@ I have successfully scaffolded and implemented the **3D BMW Themed Portfolio** u
 -   **Skills**: Floating animated icons grouped by category.
 -   **YouTube Gallery**: "AI Unlocked" section with gradient CTA.
 -   **Responsiveness**: Mobile-optimized layout (Spline model scales to 60%).
+-   **SEO**: Meta tags and description added for search engine visibility.
 
 ## Source Code
 -   **GitHub Repository**: [sandundimantha/-Portfolio](https://github.com/sandundimantha/-Portfolio.git)
