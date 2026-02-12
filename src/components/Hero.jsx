@@ -1,23 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Hero3D from './Hero3D';
 
 const Hero = () => {
     return (
         <section id="hero" className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-[#050505]">
             {/* 3D Model Layer - Z-Index 1 */}
-            <div className="absolute inset-0 z-[1] w-full h-full">
-                {/* Public Spline 3D Scene */}
-                <iframe
-                    src='https://my.spline.design/miniroom-art-copy-32a81878b30d368d4d3d524816be5395/'
-                    frameBorder='0'
-                    width='100%'
-                    height='100%'
-                    className="w-full h-full scale-[0.6] md:scale-100 pointer-events-auto" // Mobile: 60%, Desktop: 100%
-                    title="3D Spline Model"
-                ></iframe>
+            <Hero3D />
 
+            <div className="absolute inset-0 z-[1] w-full h-full pointer-events-none">
                 {/* Overlay Gradient - Pointer Events None */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)] via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[var(--bg-primary)] via-transparent to-transparent" />
             </div>
 
             {/* Content Layer - Z-Index 2 */}

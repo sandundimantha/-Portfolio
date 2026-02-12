@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaYoutube } from 'react-icons/fa';
 
 const YouTubeGallery = () => {
     return (
@@ -16,8 +17,10 @@ const YouTubeGallery = () => {
 
                 <div className="aspect-video w-full bg-[#141416] rounded-2xl overflow-hidden border border-white/10 shadow-2xl mb-12 relative group">
                     {/* Placeholder Iframe - In real app, embed YouTube iframe here */}
-                    <div className="w-full h-full flex items-center justify-center text-gray-600 group-hover:text-[var(--accent)] transition-colors">
-                        [YouTube Video Placeholder]
+                    {/* YouTube Video Placeholder - Styled Icon */}
+                    <div className="w-full h-full flex items-center justify-center bg-[#141416] group-hover:bg-[#1a1a1d] transition-colors relative cursor-pointer">
+                        <FaYoutube className="text-8xl text-red-600 group-hover:scale-110 transition-transform duration-300 drop-shadow-2xl" />
+                        <span className="absolute mt-24 text-sm text-[var(--text-secondary)]">Watch Latest Video</span>
                     </div>
                     <div className="absolute inset-0 border-2 border-transparent group-hover:border-[var(--accent-glow)] rounded-2xl transition-all duration-500 pointer-events-none" />
                 </div>
